@@ -3,9 +3,20 @@
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     <script src="js/main.js"></script>
-	<title>NPR</title>
+	<title>Morning Edition</title>
 </head>
 <body>
+
+	<div ng-controller="PlayerController">
+		
+		<ul id="programs_list" class="">
+			<li ng-repeat "program in programs">
+				<span class="large-12">{{ program.title.$text }}</span>
+			</li>
+		</ul>
+		
+	</div>
+
 
 </body>
 </html>
